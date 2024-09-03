@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --repo=https://github.com/Delaudes/Triplan.git --base-href=/Triplan/"
   },
   "private": true,
   "dependencies": {

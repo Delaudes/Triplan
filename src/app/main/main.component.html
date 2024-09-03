@@ -9,7 +9,7 @@
           <div class="row">
             <div class="input-field col s6">
               <i class="material-icons prefix">date_range</i>
-              <input type="text" class="datepicker" placeholder="jj/mm/aaaa" />
+              <input type="text" class="datepicker" placeholder="jj/mm/aa" />
               <label class="active" for="first_name">Arrivée</label>
             </div>
             <div class="input-field col s6">
@@ -18,7 +18,7 @@
             </div>
             <div class="input-field col s6">
               <i class="material-icons prefix">date_range</i>
-              <input type="text" class="datepicker" placeholder="jj/mm/aaaa" />
+              <input type="text" class="datepicker" placeholder="jj/mm/aa" />
               <label class="active" for="first_name">Départ</label>
             </div>
             <div class="input-field col s6">
@@ -39,11 +39,11 @@
             <div class="input-field col s12">
               <i class="material-icons prefix">remove_red_eye</i>
               <textarea
-                placeholder="Des envies, contraintes particulieres ?"
+                placeholder="Demandes spécifiques"
                 id="details"
                 class="materialize-textarea"
               ></textarea>
-              <label class="active" for="details">Détails</label>
+              <label class="active" for="details">Envies et contraintes</label>
             </div>
           </div>
         </form>
@@ -64,9 +64,7 @@
                 type="text"
                 class="validate"
               />
-              <label class="active" for="hebergement"
-                >Adresse de l'hébérgement</label
-              >
+              <label class="active" for="hebergement">Hébérgement</label>
             </div>
             <div class="input-field col s12">
               <i class="material-icons prefix">favorite</i>
@@ -95,24 +93,12 @@
             <div class="input-field col s12">
               <i class="material-icons prefix">local_activity</i>
               <select multiple class="formSelect">
-                <option value="" disabled>
-                  Choisissez vos activités préférées
-                </option>
-                <option value="1">
-                  <i class="material-icons right">account_balance</i>Culture
-                </option>
-                <option value="2">
-                  <i class="material-icons right">local_pizza</i>Gastronomie
-                </option>
-                <option value="3">
-                  <i class="material-icons right">landscape</i>Nature
-                </option>
-                <option value="4">
-                  <i class="material-icons right">rowing</i>Sport
-                </option>
-                <option value="5">
-                  <i class="material-icons right">help_outline</i>Autres
-                </option>
+                <option value="" disabled>Activités préférées</option>
+                <option value="1">Culture</option>
+                <option value="2">Gastronomie</option>
+                <option value="3">Nature</option>
+                <option value="4">Sport</option>
+                <option value="5">Autres</option>
               </select>
               <label>Activités</label>
             </div>
