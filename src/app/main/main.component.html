@@ -1,0 +1,196 @@
+<div class="container">
+  <ul class="collapsible expendable">
+    <li class="active">
+      <div class="collapsible-header">
+        <i class="material-icons">filter_list</i>Filtres rapides
+      </div>
+      <div class="collapsible-body">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">date_range</i>
+              <input type="text" class="datepicker" placeholder="jj/mm/aaaa" />
+              <label class="active" for="first_name">Arrivée</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">access_time</i>
+              <input type="text" class="timepicker" placeholder="hh:mm" />
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">date_range</i>
+              <input type="text" class="datepicker" placeholder="jj/mm/aaaa" />
+              <label class="active" for="first_name">Départ</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">access_time</i>
+              <input type="text" class="timepicker" placeholder="hh:mm" />
+            </div>
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">pin_drop</i>
+              <input
+                placeholder="Pays, villes ou régions"
+                id="destination"
+                type="text"
+                class="validate"
+              />
+              <label class="active" for="destination">Destination</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">remove_red_eye</i>
+              <textarea
+                placeholder="Des envies, contraintes particulieres ?"
+                id="details"
+                class="materialize-textarea"
+              ></textarea>
+              <label class="active" for="details">Détails</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header">
+        <i class="material-icons">filter_list</i>Filtres supplémentaires
+      </div>
+      <div class="collapsible-body">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">home</i>
+              <input
+                placeholder="25 rue de l'Annexion, 74000 Annecy, France"
+                id="hebergement"
+                type="text"
+                class="validate"
+              />
+              <label class="active" for="hebergement"
+                >Adresse de l'hébérgement</label
+              >
+            </div>
+            <div class="input-field col s12">
+              <i class="material-icons prefix">favorite</i>
+              <input
+                placeholder="Détente, exploration, culture, famille, etc.."
+                id="objectifs"
+                type="text"
+                class="validate"
+              />
+              <label class="active" for="destination"
+                >Objectifs du séjour</label
+              >
+            </div>
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">restaurant_menu</i>
+              <input
+                placeholder="Cuisine locale, étoilée, végétarienne/végétalienne, etc.."
+                id="transport"
+                type="text"
+                class="validate"
+              />
+              <label class="active" for="transport">Souhaits culinaires</label>
+            </div>
+
+            <div class="input-field col s12">
+              <i class="material-icons prefix">local_activity</i>
+              <select multiple class="formSelect">
+                <option value="" disabled>
+                  Choisissez vos activités préférées
+                </option>
+                <option value="1">
+                  <i class="material-icons right">account_balance</i>Culture
+                </option>
+                <option value="2">
+                  <i class="material-icons right">local_pizza</i>Gastronomie
+                </option>
+                <option value="3">
+                  <i class="material-icons right">landscape</i>Nature
+                </option>
+                <option value="4">
+                  <i class="material-icons right">rowing</i>Sport
+                </option>
+                <option value="5">
+                  <i class="material-icons right">help_outline</i>Autres
+                </option>
+              </select>
+              <label>Activités</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">face</i>
+              <input
+                placeholder="Nombre d'adultes"
+                id="adultes"
+                type="number"
+                class="validate"
+              />
+              <label class="active" for="adultes">Adultes</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">child_care</i>
+              <input
+                placeholder="Nombre d'enfants"
+                id="enfants"
+                type="number"
+                class="validate"
+              />
+              <label class="active" for="enfants">Enfants</label>
+            </div>
+            <p class="col s4 center">
+              <label>
+                <input type="checkbox" />
+                <span><i class="material-icons center">child_friendly</i></span>
+              </label>
+            </p>
+            <p class="col s4 center">
+              <label>
+                <input type="checkbox" />
+                <span><i class="material-icons center">accessible</i></span>
+              </label>
+            </p>
+            <p class="col s4 center">
+              <label>
+                <input type="checkbox" />
+                <span><i class="material-icons center">pets</i></span>
+              </label>
+            </p>
+
+            <p class="col s6 center">
+              <label>
+                <input type="checkbox" />
+                <span><i class="material-icons center">directions_car</i></span>
+              </label>
+            </p>
+            <p class="col s6 center">
+              <label>
+                <input type="checkbox" />
+                <span
+                  ><i class="material-icons center">directions_bike</i></span
+                >
+              </label>
+            </p>
+
+            <p class="col s4 center">
+              <label>
+                <input name="group1" type="radio" />
+                <span>€</span>
+              </label>
+            </p>
+            <p class="col s4 center">
+              <label>
+                <input name="group1" type="radio" />
+                <span>€€</span>
+              </label>
+            </p>
+            <p class="col s4 center">
+              <label>
+                <input name="group1" type="radio" />
+                <span>€€€</span>
+              </label>
+            </p>
+          </div>
+        </form>
+      </div>
+    </li>
+  </ul>
+</div>
