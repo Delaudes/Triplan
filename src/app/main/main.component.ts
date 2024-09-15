@@ -1,20 +1,38 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 declare var M: any;
 
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
+  isLoading = false
 
   ngAfterViewInit() {
     this.initCollapsible();
     this.initFormSelect();
     this.initTimepicker();
     this.initDatepicker();
+    this.initFloatingActionButton();
+  }
+
+  private initFloatingActionButton() {
+    M.FloatingActionButton.init(document.querySelectorAll('.fixed-action-btn'));
+  }
+
+  genererProgramme(event: Event) {
+    const filtresRapides = document.getElementById('filtresRapides') as HTMLFormElement;
+    if (filtresRapides.checkValidity()) {
+      this.isLoading = true
+      document.getElementById('programme')?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      event.preventDefault();
+      filtresRapides.reportValidity();
+    }
   }
 
   private initDatepicker() {
