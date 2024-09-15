@@ -16,7 +16,7 @@
 
   <ul class="collapsible expendable">
     <li class="active">
-      <div class="collapsible-header">
+      <div class="collapsible-header teal lighten-5">
         <i class="material-icons">filter_list</i>Filtres rapides
       </div>
       <div class="collapsible-body">
@@ -86,7 +86,7 @@
       </div>
     </li>
     <li>
-      <div class="collapsible-header">
+      <div class="collapsible-header teal lighten-5">
         <i class="material-icons">filter_list</i>Filtres supplémentaires
       </div>
       <div class="collapsible-body">
@@ -234,38 +234,28 @@
     </a>
   </div>
   <div id="programme">
-    <div *ngIf="!isLoading" class="justify">
-      <div class="card-panel teal lighten-2">
-        <span class="white-text">
-          Bienvenue sur Triplan, l'application de planification de vacances !
-          Pour générer ton programme personnalisé, commence par remplir les
-          filtres rapides en sélectionnant tes dates d'arrivée et de départ,
-          ainsi que ta destination. Si tu as des envies spécifiques ou des
-          contraintes, n'oublie pas de les ajouter dans le champ correspondant.
-        </span>
-      </div>
-
-      <div class="card-panel teal lighten-2">
-        <span class="white-text">
-          N'hésite pas à explorer les filtres supplémentaires pour affiner ton
-          programme en fonction de l'adresse de ton hébergement, de tes
-          activités préférées et de tes souhaits culinaires. Tu peux aussi
-          indiquer le nombre d'adultes et d'enfants, et préciser d'autres
-          détails comme l'accessibilité ou la présence d'animaux.
-        </span>
-      </div>
-
-      <div class="card-panel teal lighten-2">
-        <span class="white-text">
-          Une fois tous les filtres sélectionnés, clique sur le bouton d'envoi
-          en bas à droite pour générer ton programme de vacances. Un instant
-          plus tard, ton itinéraire personnalisé apparaîtra ici même.
-          <br /><br />
-          Bonne planification et bonnes vacances !
-        </span>
-      </div>
+    <div class="card-panel teal lighten-2 justify" *ngIf="!isLoading">
+      <span class="white-text">
+        Bienvenue sur Triplan, l'application de planification de vacances ! Pour
+        générer ton programme personnalisé, commence par remplir les filtres
+        rapides en sélectionnant tes dates d'arrivée et de départ, ainsi que ta
+        destination. Si tu as des envies spécifiques ou des contraintes,
+        n'oublie pas de les ajouter dans le champ correspondant.
+        <br /><br />
+        N'hésite pas à explorer les filtres supplémentaires pour affiner ton
+        programme en fonction de l'adresse de ton hébergement, de tes activités
+        préférées et de tes souhaits culinaires. Tu peux aussi indiquer le
+        nombre d'adultes et d'enfants, et préciser d'autres détails comme
+        l'accessibilité ou la présence d'animaux.
+        <br /><br />
+        Une fois tous les filtres sélectionnés, clique sur le bouton d'envoi en
+        bas à droite pour générer ton programme de vacances. Un instant plus
+        tard, ton itinéraire personnalisé apparaîtra ici même.
+        <br /><br />
+        Bonne planification et bonnes vacances !
+        <i class="material-icons right">wb_sunny</i>
+      </span>
     </div>
-
     <div class="progress" *ngIf="isLoading">
       <div class="indeterminate"></div>
     </div>
